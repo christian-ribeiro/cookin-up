@@ -9,16 +9,24 @@ export default {
   },
   data() {
     return {
-      ingredientes: ["Alho", "Manteiga", "Orégano", "Crack"],
+      ingredientes: [] as string[],
     };
   },
+  methods: {
+    adicionarIngredientes(ingrediente: string) {
+      this.ingredientes.push(ingrediente)
+    },
+    removerIngrediente(ingrediente: string) {
+      this.ingredientes = this.ingredientes.filter(element => element !== ingrediente)
+    }
+  }
 };
 </script>
 
 <template>
   <main class="conteudo-principal">
     <SuaLista :ingredientes="ingredientes" />
-    <SelecionarIngredientes />
+    <SelecionarIngredientes @adicionar-ingrediente="adicionarIngredientes" @remover-ingrediente="removerIngrediente" />
   </main>
 </template>
 
