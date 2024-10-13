@@ -1,5 +1,9 @@
 <script lang="ts">
+import SelecionarIngredientes from "./SelecionarIngredientes.vue";
 export default {
+  components: {
+    SelecionarIngredientes,
+  },
   data() {
     return {
       ingredientes: ["Alho", "Manteiga", "Orégano", "Crack"],
@@ -12,7 +16,7 @@ export default {
   <main class="conteudo-principal">
     <section>
       <span class="subtitulo-lg sua-lista-texto"> Sua lista: </span>
-      <ul class="ingredientes-sua-lista">
+      <ul v-if="ingredientes.length > 0" class="ingredientes-sua-lista">
         <li
           class="ingrediente"
           v-for="ingrediente in ingredientes"
@@ -21,7 +25,15 @@ export default {
           {{ ingrediente }}
         </li>
       </ul>
+      <p v-else class="paragrafo lista-vazia">
+        <img
+          src="../assets/imagens/icones/lista-vazia.svg"
+          alt="Ícone de pesquisa"
+        />
+        Sua lista está vazia, selecione ingredientes para iniciar.
+      </p>
     </section>
+    <SelecionarIngredientes />
   </main>
 </template>
 
