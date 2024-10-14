@@ -1,5 +1,10 @@
-# cookin-up
+# Cookin' Up!
 
+Projeto feito seguindo o curso da Alura **Vue 3: entendendo componentes, diretivas e reatividade no framework**.
+
+Neste projeto, você seleciona os ingredientes, podendo realizar a busca de receitas que utilizam os ingredientes que você selecionou.
+
+<br><br>
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
