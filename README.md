@@ -4,6 +4,19 @@ Projeto feito seguindo o curso da Alura **Vue 3: entendendo componentes, diretiv
 
 Neste projeto, você seleciona os ingredientes, podendo realizar a busca de receitas que utilizam os ingredientes que você selecionou.
 
+## Conteúdo
+* Configuração do ambiente e criação do projeto
+* Configuração do TypeScript na aplicação
+* Criação de componentes
+* Conceito de scoped
+* Utilização de diretivas do vue (v-for, v-bind, v-if, v-on)
+* Requisições de dados externos
+* Utilização de props para passar parâmetros para os componentes
+* Emissão de eventos com o $emit para interagir com os componentes em níveis superiores (componentes pais)
+* Exibição de diferentes telas, uma para selecionar os ingredientes e outra para exibir as receitas
+* Utilização do KeepAlive para manter o estado do componente de ingredientes selecionados
+
+
 <br><br>
 This template should help get you started developing with Vue 3 in Vite.
 
